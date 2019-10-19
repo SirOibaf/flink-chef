@@ -7,11 +7,11 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "1.1.0"
 source_url       'https://github.com/hopshadoop/flink-chef'
 
-recipe           "install", "Installs Apache Flink"
-recipe           "default", "Default recipe runs on all machines, needed to invoke install."
-recipe           "yarn",    "Sets up flink for running on YARN"
-recipe           "historyserver", "Sets up flink history server"
-recipe           "purge",   "Remove and delete Flink"
+recipe           "flink::install", "Installs Apache Flink"
+recipe           "flink::default", "Default recipe runs on all machines, needed to invoke install."
+recipe           "flink::yarn",    "Sets up flink for running on YARN"
+recipe           "flink::historyserver", "Sets up flink history server"
+recipe           "flink::purge",   "Remove and delete Flink"
 
 depends          "hops"
 depends          "kagent"
